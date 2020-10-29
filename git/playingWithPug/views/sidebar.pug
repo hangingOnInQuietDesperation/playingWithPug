@@ -1,0 +1,41 @@
+.wrapper
+  // Sidebar
+  nav#sidebar
+    #dismiss
+      i.fas.fa-arrow-left
+    .sidebar-header
+      h3 Bootstrap Sidebar
+    ul.list-unstyled.components
+      p Dummy Heading
+      li.active
+        a(href='#homeSubmenu' data-toggle='collapse' aria-expanded='false') Home
+        ul#homeSubmenu.collapse.list-unstyled
+          li
+            a(href='#') Home 1
+          li
+            a(href='#') Home 2
+          li
+            a(href='#') Home 3
+      li
+        a(href='#') About
+        a(href='#pageSubmenu' data-toggle='collapse' aria-expanded='false') Pages
+        ul#pageSubmenu.collapse.list-unstyled
+          li
+            a(href='#') Page 1
+          li
+            a(href='#') Page 2
+          li
+            a(href='#') Page 3
+      li
+        a(href='#') Portfolio
+      li
+        a(href='#') Contact
+  // Page Content
+  #content
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container-fluid
+        button#sidebarCollapse.btn.btn-info(type='button')
+          i.fas.fa-align-left
+          span Toggle Sidebar
+  // Dark Overlay element
+  .overlay

@@ -1,0 +1,22 @@
+// topBar.pug
+nav.navbar.bg-light.navbar-light.sticky-top
+	// Profile
+	.card(style='width:400px')
+				img.card-im-top.rounded-circle(src='/icons/yarn.png' alt='Admin' width='150')
+	
+				h4.card-title Joe Bloggs
+				p.text-secondary Likes: 580
+				p.text-secondary Follower
+				button.btn.btn-primary Follow
+				button.btn.btn-outline-primary Message
+	ul.navbar-nav.nav-fill
+		li.nav-item
+			// Profile
+		
+	
+		li.nav-item
+			a.navbar(href='/store')
+			// Toggler/collapsibe Button
+				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+					span.navbar-toggler-icon
+
